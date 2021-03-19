@@ -1,0 +1,5 @@
+{
+    "require": {
+        "jdcloud-api/jdcloud-sdk-php": "^5.2"
+    }
+}
