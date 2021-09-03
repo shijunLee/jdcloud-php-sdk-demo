@@ -20,3 +20,6 @@ jdcloud php openapi sdk demo
 
 * 在`composer.json` 所在的目录执行 composer install，会自动添加 vendor 文件夹，并下载引用
 
+```bash
+ docker run -d --rm -e JDCLOUD_ACCESS_KEY=xxx -e JDCLOUD_SECRET_ACCESS_KEY=xxx -v /Users/lishijun1/Documents/phpworkspace/jdcloud-php-sdk-demo:/var/www/html/ -p 8080:80 php:7.2-apache
+```
