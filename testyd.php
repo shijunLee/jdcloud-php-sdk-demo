@@ -29,12 +29,16 @@ function testSendMessagesByOrderIdUsingPOST()
             'orderId'  => '554454548',
             'params'  => array("a","b","c"),
     ]);
+    print("返回结果信息:</br>");
     var_dump($res);  
+    print("</br>");
     print("获取错误信息如下:</br>");
     var_dump($res["error"]);  
+    print("</br>");
     }catch (\Jdcloud\Exception\JdcloudException $e) {
         print("ERROR:</br>");
         var_dump($e->getMessage());
+        print("</br>");
         print("--------------------------------------获取请求结果信息-----------------------------------</br>");
         $result = $e->getJdcloudErrorMessage();
         var_dump($result);
