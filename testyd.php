@@ -30,12 +30,12 @@ function testSendMessagesByOrderIdUsingPOST()
             'params'  => array("a","b","c"),
     ]);
     var_dump($res);  
-    print("获取错误信息如下\n");
+    print("获取错误信息如下:</br>");
     var_dump($res["error"]);  
     }catch (\Jdcloud\Exception\JdcloudException $e) {
-        print("ERROR\n");
+        print("ERROR:</br>");
         var_dump($e->getMessage());
-        print("--------------获取请求结果信息--------------------\n");
+        print("--------------------------------------获取请求结果信息-----------------------------------</br>");
         $result = $e->getJdcloudErrorMessage();
         var_dump($result);
     }
