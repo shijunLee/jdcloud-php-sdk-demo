@@ -20,19 +20,24 @@ function testSendMessagesByOrderIdUsingPOST()
     ]);
 
 
-    try{ 
+    try{  
         $res = $client->sendMessagesByOrderIdUsingPOST([
-            'appId'  => 'testAppId',
-            'signId'  => 'testSignId',
-            'templateId'  => 'testTemplateId',
-            'venderId'  => 'testVenderId',
-            'orderId'  => 'testOrderId',
-            'params'  => array("Volvo","BMW","Toyota"),
+            'appId'  => 'yd-app-15e77328d2',
+            'signId'  => 'a202a61ae08a4da8aef50193cb50bd83',
+            'templateId'  => 'e73f7a3071c340cc984f05ca187ac9d7',
+            'venderId'  => '123',
+            'orderId'  => '554454548',
+            'params'  => array("a","b","c"),
     ]);
     var_dump($res);  
+    print("获取错误信息如下\n");
+    var_dump($res["error"]);  
     }catch (\Jdcloud\Exception\JdcloudException $e) {
-        print("ERROR");
+        print("ERROR\n");
         var_dump($e->getMessage());
+        print("--------------获取请求结果信息--------------------\n");
+        $result = $e->getJdcloudErrorMessage();
+        var_dump($result);
     }
 }
  
