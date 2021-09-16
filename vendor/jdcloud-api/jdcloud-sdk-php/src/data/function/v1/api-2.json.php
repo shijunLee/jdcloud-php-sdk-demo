@@ -269,7 +269,7 @@ return [
         'Env' => [
             'type' => 'structure',
             'members' => [
-                'data' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
+                'data' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
             ],
         ],
         'Statistics' => [
@@ -467,14 +467,6 @@ return [
             'members' => [
                 'result' =>  [ 'shape' => 'GetFunctionResultShape', ],
                 'requestId' => [ 'type' => 'string', 'locationName' => 'requestId', ],
-            ],
-        ],
-        'Filter' => [
-            'type' => 'structure',
-            'members' => [
-                'name' => [ 'type' => 'string', 'locationName' => 'name', ],
-                'operator' => [ 'type' => 'string', 'locationName' => 'operator', ],
-                'values' => [ 'type' => 'list', 'member' => [ 'type' => 'string', ], ],
             ],
         ],
         'AsyncInvokeResultShape' => [

@@ -537,8 +537,8 @@ return [
             'members' => [
                 'deviceId' => [ 'type' => 'string', 'locationName' => 'deviceId', ],
                 'functionKey' => [ 'type' => 'string', 'locationName' => 'functionKey', ],
-                'inParams' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
-                'outParams' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
+                'inParams' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
+                'outParams' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
             ],
         ],
         'ThingModelRespTO' => [
@@ -692,7 +692,7 @@ return [
                 'subDeviceId' => [ 'type' => 'string', 'locationName' => 'subDeviceId', ],
                 'subDeviceName' => [ 'type' => 'string', 'locationName' => 'subDeviceName', ],
                 'order' => [ 'type' => 'string', 'locationName' => 'order', ],
-                'orders' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
+                'orders' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
                 'pageNo' => [ 'type' => 'integer', 'locationName' => 'pageNo', ],
                 'pageSize' => [ 'type' => 'integer', 'locationName' => 'pageSize', ],
             ],
@@ -737,7 +737,7 @@ return [
             'members' => [
                 'deviceId' => [ 'type' => 'string', 'locationName' => 'deviceId', ],
                 'order' => [ 'type' => 'string', 'locationName' => 'order', ],
-                'orders' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
+                'orders' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
                 'pageNo' => [ 'type' => 'integer', 'locationName' => 'pageNo', ],
                 'pageSize' => [ 'type' => 'integer', 'locationName' => 'pageSize', ],
             ],
@@ -747,7 +747,7 @@ return [
             'members' => [
                 'deviceId' => [ 'type' => 'string', 'locationName' => 'deviceId', ],
                 'order' => [ 'type' => 'string', 'locationName' => 'order', ],
-                'orders' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
+                'orders' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
                 'pageNo' => [ 'type' => 'integer', 'locationName' => 'pageNo', ],
                 'pageSize' => [ 'type' => 'integer', 'locationName' => 'pageSize', ],
             ],
@@ -2004,14 +2004,6 @@ return [
             'type' => 'structure',
             'members' => [
                 'msgId' => [ 'type' => 'string', 'locationName' => 'msgId', ],
-            ],
-        ],
-        'Filter' => [
-            'type' => 'structure',
-            'members' => [
-                'name' => [ 'type' => 'string', 'locationName' => 'name', ],
-                'operator' => [ 'type' => 'string', 'locationName' => 'operator', ],
-                'values' => [ 'type' => 'list', 'member' => [ 'type' => 'string', ], ],
             ],
         ],
         'UpdateDeviceResultShape' => [

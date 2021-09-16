@@ -223,14 +223,6 @@ return [
                 'registryName' => [ 'type' => 'string', 'locationName' => 'registryName', ],
             ],
         ],
-        'Filter' => [
-            'type' => 'structure',
-            'members' => [
-                'name' => [ 'type' => 'string', 'locationName' => 'name', ],
-                'operator' => [ 'type' => 'string', 'locationName' => 'operator', ],
-                'values' => [ 'type' => 'list', 'member' => [ 'type' => 'string', ], ],
-            ],
-        ],
         'ReleaseAuthorizationTokenResponseShape' => [
             'type' => 'structure',
             'members' => [

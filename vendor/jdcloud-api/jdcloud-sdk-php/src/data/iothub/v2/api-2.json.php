@@ -656,14 +656,6 @@ return [
                 'deviceId' => [ 'type' => 'string', 'locationName' => 'deviceId', ],
             ],
         ],
-        'Filter' => [
-            'type' => 'structure',
-            'members' => [
-                'name' => [ 'type' => 'string', 'locationName' => 'name', ],
-                'operator' => [ 'type' => 'string', 'locationName' => 'operator', ],
-                'values' => [ 'type' => 'list', 'member' => [ 'type' => 'string', ], ],
-            ],
-        ],
         'QueryDeviceDetailResultShape' => [
             'type' => 'structure',
             'members' => [

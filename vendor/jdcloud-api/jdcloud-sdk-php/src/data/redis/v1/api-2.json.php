@@ -440,16 +440,6 @@ return [
                 'value' => [ 'type' => 'string', 'locationName' => 'value', ],
             ],
         ],
-        'Charge' => [
-            'type' => 'structure',
-            'members' => [
-                'chargeMode' => [ 'type' => 'string', 'locationName' => 'chargeMode', ],
-                'chargeStatus' => [ 'type' => 'string', 'locationName' => 'chargeStatus', ],
-                'chargeStartTime' => [ 'type' => 'string', 'locationName' => 'chargeStartTime', ],
-                'chargeExpiredTime' => [ 'type' => 'string', 'locationName' => 'chargeExpiredTime', ],
-                'chargeRetireTime' => [ 'type' => 'string', 'locationName' => 'chargeRetireTime', ],
-            ],
-        ],
         'CacheInstance' => [
             'type' => 'structure',
             'members' => [
@@ -909,13 +899,6 @@ return [
                 'requestId' => [ 'type' => 'string', 'locationName' => 'requestId', ],
             ],
         ],
-        'Sort' => [
-            'type' => 'structure',
-            'members' => [
-                'name' => [ 'type' => 'string', 'locationName' => 'name', ],
-                'direction' => [ 'type' => 'string', 'locationName' => 'direction', ],
-            ],
-        ],
         'CreateCacheInstanceResultShape' => [
             'type' => 'structure',
             'members' => [
@@ -1064,13 +1047,6 @@ return [
             'members' => [
             ],
         ],
-        'TagFilter' => [
-            'type' => 'structure',
-            'members' => [
-                'key' => [ 'type' => 'string', 'locationName' => 'key', ],
-                'values' => [ 'type' => 'list', 'member' => [ 'type' => 'string', ], ],
-            ],
-        ],
         'CreateCacheAnalysisResultShape' => [
             'type' => 'structure',
             'members' => [
@@ -1179,16 +1155,6 @@ return [
         'ModifyInstanceConfigResultShape' => [
             'type' => 'structure',
             'members' => [
-            ],
-        ],
-        'ChargeSpec' => [
-            'type' => 'structure',
-            'members' => [
-                'chargeMode' => [ 'type' => 'string', 'locationName' => 'chargeMode', ],
-                'chargeUnit' => [ 'type' => 'string', 'locationName' => 'chargeUnit', ],
-                'chargeDuration' => [ 'type' => 'integer', 'locationName' => 'chargeDuration', ],
-                'autoRenew' => [ 'type' => 'boolean', 'locationName' => 'autoRenew', ],
-                'buyScenario' => [ 'type' => 'string', 'locationName' => 'buyScenario', ],
             ],
         ],
         'DescribeCacheInstanceResponseShape' => [
@@ -1362,14 +1328,6 @@ return [
                 'info' =>  [ 'shape' => 'ClusterInfo', ],
             ],
         ],
-        'Filter' => [
-            'type' => 'structure',
-            'members' => [
-                'name' => [ 'type' => 'string', 'locationName' => 'name', ],
-                'operator' => [ 'type' => 'string', 'locationName' => 'operator', ],
-                'values' => [ 'type' => 'list', 'member' => [ 'type' => 'string', ], ],
-            ],
-        ],
         'ModifyCacheInstanceAttributeResponseShape' => [
             'type' => 'structure',
             'members' => [
@@ -1435,14 +1393,6 @@ return [
             'members' => [
                 'result' =>  [ 'shape' => 'DescribeUserQuotaResultShape', ],
                 'requestId' => [ 'type' => 'string', 'locationName' => 'requestId', ],
-            ],
-        ],
-        'Quota' => [
-            'type' => 'structure',
-            'members' => [
-                'name' => [ 'type' => 'string', 'locationName' => 'name', ],
-                'max' => [ 'type' => 'integer', 'locationName' => 'max', ],
-                'used' => [ 'type' => 'integer', 'locationName' => 'used', ],
             ],
         ],
         'DescribeUserQuotaRequestShape' => [

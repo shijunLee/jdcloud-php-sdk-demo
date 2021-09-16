@@ -270,7 +270,7 @@ return [
                 'fileFormat' => [ 'type' => 'string', 'locationName' => 'fileFormat', ],
                 'fileSize' => [ 'type' => 'long', 'locationName' => 'fileSize', ],
                 'name' => [ 'type' => 'string', 'locationName' => 'name', ],
-                'targetConf' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
+                'targetConf' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
                 'targetType' => [ 'type' => 'long', 'locationName' => 'targetType', ],
                 'timeInterval' => [ 'type' => 'long', 'locationName' => 'timeInterval', ],
             ],
@@ -310,13 +310,13 @@ return [
         'Match' => [
             'type' => 'structure',
             'members' => [
-                'eq' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
-                'not' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
-                'range' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
-                'regexp' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
-                'simple_query_string' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
-                'simpleQuery' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
-                'substring' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
+                'eq' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
+                'not' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
+                'range' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
+                'regexp' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
+                'simple_query_string' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
+                'simpleQuery' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
+                'substring' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
             ],
         ],
         'SimpleQueryItem' => [
@@ -352,7 +352,7 @@ return [
             'type' => 'structure',
             'members' => [
                 'pin' => [ 'type' => 'string', 'locationName' => 'pin', ],
-                'tags' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
+                'tags' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
                 'timestamp' => [ 'type' => 'string', 'locationName' => 'timestamp', ],
             ],
         ],
@@ -509,7 +509,7 @@ return [
                 'resourceUIDs' => [ 'type' => 'list', 'member' => [ 'type' => 'string', ], ],
                 'serviceCode' => [ 'type' => 'string', 'locationName' => 'serviceCode', ],
                 'status' => [ 'type' => 'long', 'locationName' => 'status', ],
-                'targetConf' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
+                'targetConf' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
                 'targetType' => [ 'type' => 'long', 'locationName' => 'targetType', ],
                 'timeInterval' => [ 'type' => 'long', 'locationName' => 'timeInterval', ],
                 'updateTime' => [ 'type' => 'string', 'locationName' => 'updateTime', ],
@@ -624,7 +624,7 @@ return [
         'TargetConf' => [
             'type' => 'structure',
             'members' => [
-                'targetConf' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
+                'targetConf' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
                 'targetType' => [ 'type' => 'long', 'locationName' => 'targetType', ],
             ],
         ],

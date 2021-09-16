@@ -269,14 +269,6 @@ return [
                 'language' => [ 'type' => 'string', 'locationName' => 'language', ],
             ],
         ],
-        'Filter' => [
-            'type' => 'structure',
-            'members' => [
-                'name' => [ 'type' => 'string', 'locationName' => 'name', ],
-                'operator' => [ 'type' => 'string', 'locationName' => 'operator', ],
-                'values' => [ 'type' => 'list', 'member' => [ 'type' => 'string', ], ],
-            ],
-        ],
         'DescribeDeploymentResultShape' => [
             'type' => 'structure',
             'members' => [

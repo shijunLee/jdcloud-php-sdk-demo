@@ -184,16 +184,6 @@ return [
                 'coordinatingCount' => [ 'type' => 'integer', 'locationName' => 'coordinatingCount', ],
             ],
         ],
-        'Charge' => [
-            'type' => 'structure',
-            'members' => [
-                'chargeMode' => [ 'type' => 'string', 'locationName' => 'chargeMode', ],
-                'chargeStatus' => [ 'type' => 'string', 'locationName' => 'chargeStatus', ],
-                'chargeStartTime' => [ 'type' => 'string', 'locationName' => 'chargeStartTime', ],
-                'chargeExpiredTime' => [ 'type' => 'string', 'locationName' => 'chargeExpiredTime', ],
-                'chargeRetireTime' => [ 'type' => 'string', 'locationName' => 'chargeRetireTime', ],
-            ],
-        ],
         'InternalEndpoint' => [
             'type' => 'structure',
             'members' => [
@@ -326,88 +316,11 @@ return [
                 'requestId' => [ 'type' => 'string', 'locationName' => 'requestId', ],
             ],
         ],
-        'Filter' => [
-            'type' => 'structure',
-            'members' => [
-                'name' => [ 'type' => 'string', 'locationName' => 'name', ],
-                'operator' => [ 'type' => 'string', 'locationName' => 'operator', ],
-                'values' => [ 'type' => 'list', 'member' => [ 'type' => 'string', ], ],
-            ],
-        ],
         'DescribeInstanceRequestShape' => [
             'type' => 'structure',
             'members' => [
                 'regionId' => [ 'type' => 'string', 'locationName' => 'regionId', ],
                 'instanceId' => [ 'type' => 'string', 'locationName' => 'instanceId', ],
-            ],
-        ],
-        'CreateInstanceResponseShape' => [
-            'type' => 'structure',
-            'members' => [
-                'result' =>  [ 'shape' => 'CreateInstanceResultShape', ],
-                'requestId' => [ 'type' => 'string', 'locationName' => 'requestId', ],
-            ],
-        ],
-        'ModifyInstanceSpecRequestShape' => [
-            'type' => 'structure',
-            'members' => [
-                'nodeClass' => [ 'type' => 'string', 'locationName' => 'nodeClass', ],
-                'nodeDiskGB' => [ 'type' => 'integer', 'locationName' => 'nodeDiskGB', ],
-                'nodeCount' => [ 'type' => 'integer', 'locationName' => 'nodeCount', ],
-                'masterClass' => [ 'type' => 'string', 'locationName' => 'masterClass', ],
-                'coordinatingClass' => [ 'type' => 'string', 'locationName' => 'coordinatingClass', ],
-                'coordinatingCount' => [ 'type' => 'integer', 'locationName' => 'coordinatingCount', ],
-                'regionId' => [ 'type' => 'string', 'locationName' => 'regionId', ],
-                'instanceId' => [ 'type' => 'string', 'locationName' => 'instanceId', ],
-            ],
-        ],
-        'DescribeInstanceResultShape' => [
-            'type' => 'structure',
-            'members' => [
-                'instance' =>  [ 'shape' => 'Instance', ],
-            ],
-        ],
-        'ChargeSpec' => [
-            'type' => 'structure',
-            'members' => [
-                'chargeMode' => [ 'type' => 'string', 'locationName' => 'chargeMode', ],
-                'chargeUnit' => [ 'type' => 'string', 'locationName' => 'chargeUnit', ],
-                'chargeDuration' => [ 'type' => 'integer', 'locationName' => 'chargeDuration', ],
-                'autoRenew' => [ 'type' => 'boolean', 'locationName' => 'autoRenew', ],
-                'buyScenario' => [ 'type' => 'string', 'locationName' => 'buyScenario', ],
-            ],
-        ],
-        'DeleteInstanceRequestShape' => [
-            'type' => 'structure',
-            'members' => [
-                'regionId' => [ 'type' => 'string', 'locationName' => 'regionId', ],
-                'instanceId' => [ 'type' => 'string', 'locationName' => 'instanceId', ],
-            ],
-        ],
-        'ModifyInstanceSpecResponseShape' => [
-            'type' => 'structure',
-            'members' => [
-                'result' =>  [ 'shape' => 'ModifyInstanceSpecResultShape', ],
-                'requestId' => [ 'type' => 'string', 'locationName' => 'requestId', ],
-            ],
-        ],
-        'CreateInstanceResultShape' => [
-            'type' => 'structure',
-            'members' => [
-                'orderNum' => [ 'type' => 'string', 'locationName' => 'orderNum', ],
-                'instanceId' => [ 'type' => 'string', 'locationName' => 'instanceId', ],
-            ],
-        ],
-        'TagFilter' => [
-            'type' => 'structure',
-            'members' => [
-                'key' => [ 'type' => 'string', 'locationName' => 'key', ],
-                'values' => [ 'type' => 'list', 'member' => [ 'type' => 'string', ], ],
-            ],
-        ],
-        'DeleteInstanceResultShape' => [
-            'type' => 'structure',
-            'members' => [
             ],
         ],
         'ModifyInstanceSpecResultShape' => [
@@ -427,10 +340,30 @@ return [
                 'regionId' => [ 'type' => 'string', 'locationName' => 'regionId', ],
             ],
         ],
+        'CreateInstanceResponseShape' => [
+            'type' => 'structure',
+            'members' => [
+                'result' =>  [ 'shape' => 'CreateInstanceResultShape', ],
+                'requestId' => [ 'type' => 'string', 'locationName' => 'requestId', ],
+            ],
+        ],
         'DeleteInstanceResponseShape' => [
             'type' => 'structure',
             'members' => [
                 'requestId' => [ 'type' => 'string', 'locationName' => 'requestId', ],
+            ],
+        ],
+        'ModifyInstanceSpecRequestShape' => [
+            'type' => 'structure',
+            'members' => [
+                'nodeClass' => [ 'type' => 'string', 'locationName' => 'nodeClass', ],
+                'nodeDiskGB' => [ 'type' => 'integer', 'locationName' => 'nodeDiskGB', ],
+                'nodeCount' => [ 'type' => 'integer', 'locationName' => 'nodeCount', ],
+                'masterClass' => [ 'type' => 'string', 'locationName' => 'masterClass', ],
+                'coordinatingClass' => [ 'type' => 'string', 'locationName' => 'coordinatingClass', ],
+                'coordinatingCount' => [ 'type' => 'integer', 'locationName' => 'coordinatingCount', ],
+                'regionId' => [ 'type' => 'string', 'locationName' => 'regionId', ],
+                'instanceId' => [ 'type' => 'string', 'locationName' => 'instanceId', ],
             ],
         ],
         'CreateInstanceRequestShape' => [
@@ -441,6 +374,19 @@ return [
                 'regionId' => [ 'type' => 'string', 'locationName' => 'regionId', ],
             ],
         ],
+        'DescribeInstanceResultShape' => [
+            'type' => 'structure',
+            'members' => [
+                'instance' =>  [ 'shape' => 'Instance', ],
+            ],
+        ],
+        'DeleteInstanceRequestShape' => [
+            'type' => 'structure',
+            'members' => [
+                'regionId' => [ 'type' => 'string', 'locationName' => 'regionId', ],
+                'instanceId' => [ 'type' => 'string', 'locationName' => 'instanceId', ],
+            ],
+        ],
         'DescribeInstancesResponseShape' => [
             'type' => 'structure',
             'members' => [
@@ -448,11 +394,30 @@ return [
                 'requestId' => [ 'type' => 'string', 'locationName' => 'requestId', ],
             ],
         ],
+        'ModifyInstanceSpecResponseShape' => [
+            'type' => 'structure',
+            'members' => [
+                'result' =>  [ 'shape' => 'ModifyInstanceSpecResultShape', ],
+                'requestId' => [ 'type' => 'string', 'locationName' => 'requestId', ],
+            ],
+        ],
+        'CreateInstanceResultShape' => [
+            'type' => 'structure',
+            'members' => [
+                'orderNum' => [ 'type' => 'string', 'locationName' => 'orderNum', ],
+                'instanceId' => [ 'type' => 'string', 'locationName' => 'instanceId', ],
+            ],
+        ],
         'DescribeInstancesResultShape' => [
             'type' => 'structure',
             'members' => [
                 'instances' => [ 'type' => 'list', 'member' => [ 'shape' => 'Instance', ], ],
                 'totalCount' => [ 'type' => 'integer', 'locationName' => 'totalCount', ],
+            ],
+        ],
+        'DeleteInstanceResultShape' => [
+            'type' => 'structure',
+            'members' => [
             ],
         ],
         'DescribeInstanceResponseShape' => [

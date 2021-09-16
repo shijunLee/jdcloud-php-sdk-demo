@@ -2119,15 +2119,6 @@ return [
                 'totalPage' => [ 'type' => 'integer', 'locationName' => 'totalPage', ],
             ],
         ],
-        'Err' => [
-            'type' => 'structure',
-            'members' => [
-                'code' => [ 'type' => 'long', 'locationName' => 'code', ],
-                'details' => [ 'type' => 'object', 'locationName' => 'details', ],
-                'message' => [ 'type' => 'string', 'locationName' => 'message', ],
-                'status' => [ 'type' => 'string', 'locationName' => 'status', ],
-            ],
-        ],
         'DescribeCCAttackLogDetailsResultShape' => [
             'type' => 'structure',
             'members' => [
@@ -2671,13 +2662,6 @@ return [
                 'regionId' => [ 'type' => 'string', 'locationName' => 'regionId', ],
                 'instanceId' => [ 'type' => 'string', 'locationName' => 'instanceId', ],
                 'forwardRuleId' => [ 'type' => 'string', 'locationName' => 'forwardRuleId', ],
-            ],
-        ],
-        'Sort' => [
-            'type' => 'structure',
-            'members' => [
-                'name' => [ 'type' => 'string', 'locationName' => 'name', ],
-                'direction' => [ 'type' => 'string', 'locationName' => 'direction', ],
             ],
         ],
         'DescribeForwardRuleRequestShape' => [
@@ -3542,13 +3526,6 @@ return [
                 'ipSetId' => [ 'type' => 'string', 'locationName' => 'ipSetId', ],
             ],
         ],
-        'BatchResultDetail' => [
-            'type' => 'structure',
-            'members' => [
-                'successCount' => [ 'type' => 'integer', 'locationName' => 'successCount', ],
-                'failed' => [ 'type' => 'list', 'member' => [ 'shape' => 'ErrorItem', ], ],
-            ],
-        ],
         'DescribeIpSetRequestShape' => [
             'type' => 'structure',
             'members' => [
@@ -3588,16 +3565,6 @@ return [
                 'pageSize' => [ 'type' => 'integer', 'locationName' => 'pageSize', ],
                 'regionId' => [ 'type' => 'string', 'locationName' => 'regionId', ],
                 'instanceId' => [ 'type' => 'string', 'locationName' => 'instanceId', ],
-            ],
-        ],
-        'ErrorItem' => [
-            'type' => 'structure',
-            'members' => [
-                'id' => [ 'type' => 'string', 'locationName' => 'id', ],
-                'code' => [ 'type' => 'long', 'locationName' => 'code', ],
-                'details' => [ 'type' => 'object', 'locationName' => 'details', ],
-                'message' => [ 'type' => 'string', 'locationName' => 'message', ],
-                'status' => [ 'type' => 'string', 'locationName' => 'status', ],
             ],
         ],
         'CreateIpSetRequestShape' => [

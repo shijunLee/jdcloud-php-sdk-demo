@@ -458,14 +458,6 @@ return [
                 'isDefault' => [ 'type' => 'boolean', 'locationName' => 'isDefault', ],
             ],
         ],
-        'ChargeSpec' => [
-            'type' => 'structure',
-            'members' => [
-                'chargeMode' => [ 'type' => 'string', 'locationName' => 'chargeMode', ],
-                'chargeUnit' => [ 'type' => 'string', 'locationName' => 'chargeUnit', ],
-                'chargeDuration' => [ 'type' => 'integer', 'locationName' => 'chargeDuration', ],
-            ],
-        ],
         'HealthCheckSpec' => [
             'type' => 'structure',
             'members' => [
@@ -525,14 +517,6 @@ return [
                 'value' => [ 'type' => 'string', 'locationName' => 'value', ],
             ],
         ],
-        'ElasticIpSpec' => [
-            'type' => 'structure',
-            'members' => [
-                'bandwidthMbps' => [ 'type' => 'integer', 'locationName' => 'bandwidthMbps', ],
-                'provider' => [ 'type' => 'string', 'locationName' => 'provider', ],
-                'chargeSpec' =>  [ 'shape' => 'ChargeSpec', ],
-            ],
-        ],
         'CreateLoadBalancerSpec' => [
             'type' => 'structure',
             'members' => [
@@ -575,6 +559,14 @@ return [
             'type' => 'structure',
             'members' => [
                 'ruleIds' => [ 'type' => 'list', 'member' => [ 'type' => 'string', ], ],
+            ],
+        ],
+        'ElasticIpSpec' => [
+            'type' => 'structure',
+            'members' => [
+                'bandwidth' => [ 'type' => 'integer', 'locationName' => 'bandwidth', ],
+                'provider' => [ 'type' => 'string', 'locationName' => 'provider', ],
+                'chargeSpec' =>  [ 'shape' => 'ChargeSpec', ],
             ],
         ],
         'ExtensionCertificateSpec' => [
@@ -651,16 +643,6 @@ return [
                 'description' => [ 'type' => 'string', 'locationName' => 'description', ],
                 'deleteProtection' => [ 'type' => 'boolean', 'locationName' => 'deleteProtection', ],
                 'createdTime' => [ 'type' => 'string', 'locationName' => 'createdTime', ],
-            ],
-        ],
-        'Charge' => [
-            'type' => 'structure',
-            'members' => [
-                'chargeMode' => [ 'type' => 'string', 'locationName' => 'chargeMode', ],
-                'chargeStatus' => [ 'type' => 'string', 'locationName' => 'chargeStatus', ],
-                'chargeStartTime' => [ 'type' => 'string', 'locationName' => 'chargeStartTime', ],
-                'chargeExpiredTime' => [ 'type' => 'string', 'locationName' => 'chargeExpiredTime', ],
-                'chargeRetireTime' => [ 'type' => 'string', 'locationName' => 'chargeRetireTime', ],
             ],
         ],
         'ModifyQuotaSpec' => [
@@ -883,14 +865,6 @@ return [
             'members' => [
                 'regionId' => [ 'type' => 'string', 'locationName' => 'regionId', ],
                 'backendId' => [ 'type' => 'string', 'locationName' => 'backendId', ],
-            ],
-        ],
-        'Filter' => [
-            'type' => 'structure',
-            'members' => [
-                'name' => [ 'type' => 'string', 'locationName' => 'name', ],
-                'operator' => [ 'type' => 'string', 'locationName' => 'operator', ],
-                'values' => [ 'type' => 'list', 'member' => [ 'type' => 'string', ], ],
             ],
         ],
         'DescribeBackendsRequestShape' => [

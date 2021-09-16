@@ -834,13 +834,6 @@ return [
                 'consumerGroupId' => [ 'type' => 'string', 'locationName' => 'consumerGroupId', ],
             ],
         ],
-        'TagFilter' => [
-            'type' => 'structure',
-            'members' => [
-                'key' => [ 'type' => 'string', 'locationName' => 'key', ],
-                'values' => [ 'type' => 'list', 'member' => [ 'type' => 'string', ], ],
-            ],
-        ],
         'DeleteTopicRequestShape' => [
             'type' => 'structure',
             'members' => [

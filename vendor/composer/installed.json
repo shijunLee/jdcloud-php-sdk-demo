@@ -212,17 +212,17 @@
         },
         {
             "name": "jdcloud-api/jdcloud-sdk-php",
-            "version": "5.2.27",
-            "version_normalized": "5.2.27.0",
+            "version": "5.2.28",
+            "version_normalized": "5.2.28.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jdcloud-api/jdcloud-sdk-php.git",
-                "reference": "91f9911acf7945225a8a021f1c158f81230959a5"
+                "reference": "9ed54997dea614d2a42f21fa8efca1a8a79ff81f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jdcloud-api/jdcloud-sdk-php/zipball/91f9911acf7945225a8a021f1c158f81230959a5",
-                "reference": "91f9911acf7945225a8a021f1c158f81230959a5",
+                "url": "https://api.github.com/repos/jdcloud-api/jdcloud-sdk-php/zipball/9ed54997dea614d2a42f21fa8efca1a8a79ff81f",
+                "reference": "9ed54997dea614d2a42f21fa8efca1a8a79ff81f",
                 "shasum": ""
             },
             "require": {
@@ -249,7 +249,7 @@
                 "ext-curl": "To send requests using cURL",
                 "ext-openssl": "Allows using ssl"
             },
-            "time": "2021-07-30T10:59:12+00:00",
+            "time": "2021-09-16T11:27:19+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -284,7 +284,7 @@
             ],
             "support": {
                 "issues": "https://github.com/jdcloud-api/jdcloud-sdk-php/issues",
-                "source": "https://github.com/jdcloud-api/jdcloud-sdk-php/tree/5.2.27"
+                "source": "https://github.com/jdcloud-api/jdcloud-sdk-php/tree/5.2.28"
             },
             "install-path": "../jdcloud-api/jdcloud-sdk-php"
         },

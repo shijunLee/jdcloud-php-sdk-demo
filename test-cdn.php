@@ -6,9 +6,40 @@ use Jdcloud\Result;
 use Jdcloud\Cdn\CdnClient; 
 
 function getCred(){ 
-    $cred = new Credentials('your ak', 'your sk');
-    return $cred;
+   $accessKey = getenv('JDCLOUD_ACCESS_KEY');
+   $accessSecretKey = getenv('JDCLOUD_SECRET_ACCESS_KEY');
+   $cred = new Credentials($accessKey, $accessSecretKey);
+     return $cred;
 }
+
+function testQueryStatisticsData()
+{
+    $client = new CdnClient([
+        'credentials'  =>  getCred(),
+        'version' => 'latest', 
+        'scheme' => 'http',
+       
+    ]); 
+    try{ 
+        $res = $client->queryStatisticsData([
+            'startTime'  => "2021-09-14T04:00:10Z",
+            'endTime'  =>  "2021-09-14T05:20:10Z",
+            'domain'  => 'cdn-zhulongimg.jdcloud.com',
+            'period'  => 'fiveMin',
+            
+    ]);
+    var_dump($res);
+    // $this->assertNotNull($res);
+    // $this->assertNotNull($res['requestId']);
+    // $this->assertNotNull($res['result']); 
+    }catch (\Jdcloud\Exception\JdcloudException $e) {
+        print("ERROR");
+        var_dump($e->getMessage());
+        
+    }
+}
+
+
 function testQueryMixStatisticsData()
 { 
     $client = new CdnClient([
@@ -38,5 +69,5 @@ function testQueryMixStatisticsData()
     }
 }
  
-testQueryMixStatisticsData();
+testQueryStatisticsData();
 ?>

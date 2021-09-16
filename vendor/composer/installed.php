@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '3fba6f6eaf97bda805ecfe37683eb557360b4a49',
+        'reference' => 'd128aeb258b325c866dbc884eb747f17bcae61dd',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '3fba6f6eaf97bda805ecfe37683eb557360b4a49',
+            'reference' => 'd128aeb258b325c866dbc884eb747f17bcae61dd',
             'dev_requirement' => false,
         ),
         'guzzlehttp/guzzle' => array(
@@ -47,12 +47,12 @@
             'dev_requirement' => false,
         ),
         'jdcloud-api/jdcloud-sdk-php' => array(
-            'pretty_version' => '5.2.27',
-            'version' => '5.2.27.0',
+            'pretty_version' => '5.2.28',
+            'version' => '5.2.28.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../jdcloud-api/jdcloud-sdk-php',
             'aliases' => array(),
-            'reference' => '91f9911acf7945225a8a021f1c158f81230959a5',
+            'reference' => '9ed54997dea614d2a42f21fa8efca1a8a79ff81f',
             'dev_requirement' => false,
         ),
         'mtdowling/jmespath.php' => array(

@@ -1973,7 +1973,7 @@ return [
         'CodeStatDetailResp' => [
             'type' => 'structure',
             'members' => [
-                'codeMap' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
+                'codeMap' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
                 'details' => [ 'type' => 'list', 'member' => [ 'shape' => 'CodeDetailItem', ], ],
             ],
         ],
@@ -2673,7 +2673,7 @@ return [
                 'ip' => [ 'type' => 'string', 'locationName' => 'ip', ],
                 'rank' => [ 'type' => 'integer', 'locationName' => 'rank', ],
                 'value' => [ 'type' => 'integer', 'locationName' => 'value', ],
-                'fullValue' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
+                'fullValue' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
             ],
         ],
         'StatisticsData' => [
@@ -2706,7 +2706,7 @@ return [
             'members' => [
                 'startTime' => [ 'type' => 'string', 'locationName' => 'startTime', ],
                 'endTime' => [ 'type' => 'string', 'locationName' => 'endTime', ],
-                'data' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
+                'data' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
             ],
         ],
         'StatisticsTopUrlItem' => [
@@ -2715,7 +2715,7 @@ return [
                 'url' => [ 'type' => 'string', 'locationName' => 'url', ],
                 'rank' => [ 'type' => 'integer', 'locationName' => 'rank', ],
                 'value' => [ 'type' => 'integer', 'locationName' => 'value', ],
-                'fullValue' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
+                'fullValue' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
             ],
         ],
         'StatisticsTopUrlData' => [
@@ -2789,7 +2789,7 @@ return [
             'members' => [
                 'startTime' => [ 'type' => 'string', 'locationName' => 'startTime', ],
                 'endTime' => [ 'type' => 'string', 'locationName' => 'endTime', ],
-                'data' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
+                'data' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
             ],
         ],
         'Page' => [
@@ -3720,7 +3720,7 @@ return [
                 'domain' => [ 'type' => 'string', 'locationName' => 'domain', ],
                 'cycle' => [ 'type' => 'integer', 'locationName' => 'cycle', ],
                 'monitorPath' => [ 'type' => 'string', 'locationName' => 'monitorPath', ],
-                'httpRequestHeader' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
+                'httpRequestHeader' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
             ],
         ],
         'SetHttpTypeResultShape' => [
@@ -3912,7 +3912,7 @@ return [
             'members' => [
                 'cycle' => [ 'type' => 'integer', 'locationName' => 'cycle', ],
                 'monitorPath' => [ 'type' => 'string', 'locationName' => 'monitorPath', ],
-                'httpRequestHeader' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
+                'httpRequestHeader' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
                 'domain' => [ 'type' => 'string', 'locationName' => 'domain', ],
             ],
         ],
@@ -4805,7 +4805,7 @@ return [
         'QueryDomainTempProKeysResultShape' => [
             'type' => 'structure',
             'members' => [
-                'proKeyMap' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
+                'proKeyMap' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
             ],
         ],
         'ModifyDomainTempInstResponseShape' => [
@@ -4842,7 +4842,7 @@ return [
                 'tempId' => [ 'type' => 'long', 'locationName' => 'tempId', ],
                 'instId' => [ 'type' => 'long', 'locationName' => 'instId', ],
                 'instName' => [ 'type' => 'string', 'locationName' => 'instName', ],
-                'instProInfoMap' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
+                'instProInfoMap' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
             ],
         ],
         'QueryDomainTempInstRequestShape' => [
@@ -4871,7 +4871,7 @@ return [
                 'instName' => [ 'type' => 'string', 'locationName' => 'instName', ],
                 'createTime' => [ 'type' => 'string', 'locationName' => 'createTime', ],
                 'updateTime' => [ 'type' => 'string', 'locationName' => 'updateTime', ],
-                'instProInfoMap' => [ 'type' => 'map', 'key' => [ 'shape' => 'string', ], 'value' => [ 'shape' => 'string', ], ],
+                'instProInfoMap' => [ 'type' => 'map', 'key' => [ 'type' => 'string', ], 'value' => [ 'type' => 'string', ], ],
             ],
         ],
         'CheckWhetherIpBelongToJCloudResultShape' => [

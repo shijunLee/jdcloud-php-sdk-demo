@@ -1331,14 +1331,6 @@ return [
                 'accessAuthId' => [ 'type' => 'string', 'locationName' => 'accessAuthId', ],
             ],
         ],
-        'Filter' => [
-            'type' => 'structure',
-            'members' => [
-                'name' => [ 'type' => 'string', 'locationName' => 'name', ],
-                'operator' => [ 'type' => 'string', 'locationName' => 'operator', ],
-                'values' => [ 'type' => 'list', 'member' => [ 'type' => 'string', ], ],
-            ],
-        ],
         'QueryAccessAuthsResponseShape' => [
             'type' => 'structure',
             'members' => [
@@ -1905,13 +1897,6 @@ return [
                 'apiGroupId' => [ 'type' => 'string', 'locationName' => 'apiGroupId', ],
             ],
         ],
-        'TagFilter' => [
-            'type' => 'structure',
-            'members' => [
-                'key' => [ 'type' => 'string', 'locationName' => 'key', ],
-                'values' => [ 'type' => 'list', 'member' => [ 'type' => 'string', ], ],
-            ],
-        ],
         'ModifyApiGroupAttributeResultShape' => [
             'type' => 'structure',
             'members' => [
@@ -2223,16 +2208,6 @@ return [
             'type' => 'structure',
             'members' => [
                 'requestId' => [ 'type' => 'string', 'locationName' => 'requestId', ],
-            ],
-        ],
-        'ErrorItem' => [
-            'type' => 'structure',
-            'members' => [
-                'id' => [ 'type' => 'string', 'locationName' => 'id', ],
-                'code' => [ 'type' => 'long', 'locationName' => 'code', ],
-                'details' => [ 'type' => 'object', 'locationName' => 'details', ],
-                'message' => [ 'type' => 'string', 'locationName' => 'message', ],
-                'status' => [ 'type' => 'string', 'locationName' => 'status', ],
             ],
         ],
         'DeployResponseShape' => [
